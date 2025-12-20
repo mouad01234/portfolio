@@ -45,9 +45,7 @@ body {
 
 /* NAVBAR – CENTERED + TALLER */
 .navbar {
-    position: fixed;
-    top: 25px;
-    left: 50%;
+    
     transform: translateX(-50%);
     z-index: 1000;
 
@@ -60,7 +58,7 @@ body {
     border: 1.5px solid rgba(210, 141, 255, 0.6);
     backdrop-filter: blur(18px);
 
-    padding: 20px 60px; /* bigger height */
+    padding: 100px 60px; /* bigger height */
     border-radius: 999px;
 
     box-shadow:
@@ -256,3 +254,4 @@ h2 {
 section {
     scroll-margin-top: 140px; /* more space for taller navbar */
 }
+
