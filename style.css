@@ -108,7 +108,6 @@ border-radius: 25px;
 box-shadow: 0 0 10px #b94dff;
 }
 
-/* Container dyal projets */
 .projects {
 display: flex;
 gap: 20px;
@@ -116,7 +115,6 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-/* Card dyal projet b nafs l design li 3andek */
 .project-card {
 background: rgba(255,255,255,0.05);
 padding: 20px;
@@ -128,13 +126,11 @@ backdrop-filter: blur(10px);
 transition: 0.3s;
 }
 
-/* Hover petit effet */
 .project-card:hover {
 transform: translateY(-5px);
 background: rgba(255,255,255,0.08);
 }
 
-/* Image lfo9 */
 .project-card img {
 width: 100%;
 height: 280px;
@@ -143,19 +139,16 @@ object-fit: cover;
 margin-bottom: 12px;
 }
 
-/* Titre */
 .project-card h3 {
 margin-bottom: 10px;
 color: #fff;
 }
 
-/* Description */
 .project-card p {
 color: #ddd;
 font-size: 14px;
 }
 
-/* Link b nafs l color li 3andek */
 .project-card a {
 display: inline-block;
 margin-top: 12px;
@@ -168,7 +161,6 @@ text-decoration: none;
 text-decoration: underline;
 }
 
-/* CONTACT */
 #contact p {
 text-align: center;
 margin: 8px 0;
@@ -178,3 +170,4 @@ width: 200px;
 height: 300px;
 margin: 6px;
 }
+
