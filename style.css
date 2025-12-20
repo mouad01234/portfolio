@@ -5,13 +5,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #0d0f24;
     color: white;
     overflow-x: hidden;
 }
-
-
 .bg-animation {
     position: fixed;
     width: 200%;
@@ -26,8 +28,6 @@ body {
     0% { transform: translate(-20%, -20%); }
     100% { transform: translate(20%, 20%); }
 }
-
-
 .glass {
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.15);
@@ -38,11 +38,35 @@ body {
     border-radius: 18px;
     box-shadow: 0 0 25px #6f00ff55;
 }
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 12px 30px;
+    border-radius: 40px;
+}
 
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
 
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d28dff;
+}
 .hero {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .profile {
@@ -81,15 +105,12 @@ body {
     box-shadow: 0 0 12px #b94dff;
 }
 
-
 h2 {
     text-align: center;
     margin-bottom: 25px;
     font-size: 32px;
     color: #d28dff;
 }
-
-
 .card {
     background: rgba(255,255,255,0.05);
     padding: 20px;
@@ -97,8 +118,6 @@ h2 {
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.1);
 }
-
-
 .skills {
     display: flex;
     justify-content: center;
@@ -112,16 +131,13 @@ h2 {
     border-radius: 25px;
     box-shadow: 0 0 10px #b94dff;
 }
-
-/* Container dyal projets */
 .projects {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Card dyal projet b nafs l design li 3andek */
 .project-card {
     background: rgba(255,255,255,0.05);
     padding: 20px;
@@ -129,17 +145,13 @@ h2 {
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.1);
     text-align: center;
-    backdrop-filter: blur(10px);
     transition: 0.3s;
 }
 
-/* Hover petit effet */
 .project-card:hover {
     transform: translateY(-5px);
-    background: rgba(255,255,255,0.08);
 }
 
-/* Image lfo9 */
 .project-card img {
     width: 100%;
     height: 280px;
@@ -148,19 +160,11 @@ h2 {
     margin-bottom: 12px;
 }
 
-/* Titre */
-.project-card h3 {
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-/* Description */
 .project-card p {
-    color: #ddd;
     font-size: 14px;
+    color: #ddd;
 }
 
-/* Link b nafs l color li 3andek */
 .project-card a {
     display: inline-block;
     margin-top: 12px;
@@ -172,15 +176,11 @@ h2 {
 .project-card a:hover {
     text-decoration: underline;
 }
-
-
-/* CONTACT */
 #contact p {
     text-align: center;
     margin: 8px 0;
 }
-#img2{
-    width: 200px;
-     height: 300px;
-     margin: 6px;
+
+section {
+    scroll-margin-top: 120px;
 }
