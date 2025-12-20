@@ -5,17 +5,13 @@
     font-family: "Poppins", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background: #0d0f24;
     color: white;
     overflow-x: hidden;
 }
 
-/* BACKGROUND ANIMATION */
+
 .bg-animation {
     position: fixed;
     width: 200%;
@@ -31,7 +27,7 @@ body {
     100% { transform: translate(20%, 20%); }
 }
 
-/* GLASS */
+
 .glass {
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.15);
@@ -43,90 +39,10 @@ body {
     box-shadow: 0 0 25px #6f00ff55;
 }
 
-/* NAVBAR – CENTERED + TALLER */
-.navbar {
-    
-    transform: translateX(-50%);
-    z-index: 1000;
 
-    background: linear-gradient(
-        145deg,
-        rgba(127, 0, 255, 0.3),
-        rgba(225, 0, 255, 0.2)
-    );
-
-    border: 1.5px solid rgba(210, 141, 255, 0.6);
-    backdrop-filter: blur(18px);
-
-    padding: 100px 60px; /* bigger height */
-    border-radius: 999px;
-
-    box-shadow:
-        0 0 30px #6f00ff55,
-        0 0 50px #9f4bff33,
-        inset 0 0 14px rgba(255,255,255,0.08);
-}
-
-/* Glow / Star effect */
-.navbar::before {
-    content: "";
-    position: absolute;
-    inset: -4px;
-    border-radius: 999px;
-    background: linear-gradient(
-        90deg,
-        #7f00ff,
-        #e100ff,
-        #7f00ff
-    );
-    opacity: 0.55;
-    filter: blur(16px);
-    z-index: -1;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 38px;
-    align-items: center;
-    justify-content: center; /* center content horizontally */
-}
-
-.navbar a {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.7px;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    color: #e3b6ff;
-}
-
-.navbar a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(90deg, #7f00ff, #e100ff);
-    transition: 0.3s;
-    transform: translateX(-50%);
-    border-radius: 10px;
-}
-
-.navbar a:hover::after {
-    width: 100%;
-}
-
-/* HERO */
 .hero {
     text-align: center;
-    padding-top: 120px; /* more space from navbar */
+    padding-top: 60px;
 }
 
 .profile {
@@ -165,7 +81,7 @@ body {
     box-shadow: 0 0 12px #b94dff;
 }
 
-/* TITLES */
+
 h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -173,7 +89,7 @@ h2 {
     color: #d28dff;
 }
 
-/* CARDS */
+
 .card {
     background: rgba(255,255,255,0.05);
     padding: 20px;
@@ -182,7 +98,7 @@ h2 {
     border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* SKILLS */
+
 .skills {
     display: flex;
     justify-content: center;
@@ -197,14 +113,15 @@ h2 {
     box-shadow: 0 0 10px #b94dff;
 }
 
-/* PROJECTS */
+/* Container dyal projets */
 .projects {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
 }
 
+/* Card dyal projet b nafs l design li 3andek */
 .project-card {
     background: rgba(255,255,255,0.05);
     padding: 20px;
@@ -212,13 +129,17 @@ h2 {
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.1);
     text-align: center;
+    backdrop-filter: blur(10px);
     transition: 0.3s;
 }
 
+/* Hover petit effet */
 .project-card:hover {
     transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
 }
 
+/* Image lfo9 */
 .project-card img {
     width: 100%;
     height: 280px;
@@ -227,11 +148,19 @@ h2 {
     margin-bottom: 12px;
 }
 
-.project-card p {
-    font-size: 14px;
-    color: #ddd;
+/* Titre */
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
 }
 
+/* Description */
+.project-card p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* Link b nafs l color li 3andek */
 .project-card a {
     display: inline-block;
     margin-top: 12px;
@@ -244,14 +173,14 @@ h2 {
     text-decoration: underline;
 }
 
+
 /* CONTACT */
 #contact p {
     text-align: center;
     margin: 8px 0;
 }
-
-/* FIX scroll */
-section {
-    scroll-margin-top: 140px; /* more space for taller navbar */
+#img2{
+    width: 200px;
+     height: 300px;
+     margin: 6px;
 }
-
