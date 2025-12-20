@@ -63,8 +63,7 @@ body {
 
 .navbar a:hover {
     color: #d28dff;
-}
-.hero {
+}.hero {
     text-align: center;
     padding-top: 80px;
 }
@@ -184,3 +183,4 @@ h2 {
 section {
     scroll-margin-top: 120px;
 }
+
