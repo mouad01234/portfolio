@@ -10,6 +10,7 @@ background:#0d0f24;
 color:white;
 overflow-x:hidden;
 }
+
 .bg-animation{
 position:fixed;
 width:200%;
@@ -35,6 +36,7 @@ width:85%;
 border-radius:18px;
 box-shadow:0 0 25px #6f00ff55;
 }
+
 .hero{
 text-align:center;
 padding-top:60px;
@@ -96,6 +98,7 @@ margin-bottom:20px;
 border-radius:12px;
 border:1px solid rgba(255,255,255,0.1);
 }
+
 .skills{
 display:flex;
 justify-content:center;
@@ -153,8 +156,4 @@ font-weight:bold;
 text-decoration:none;
 }
 
-#contact p{
-text-align:center;
-margin:8px 0;
-}
-
+#contact
